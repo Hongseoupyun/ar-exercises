@@ -11,8 +11,8 @@ puts "----------"
 
 # Your code goes here ...
 
-puts "Search the store"
-store_name_by_users = gets.chomps
+puts "Make a new store"
+@store_name_by_users = gets.chomp
 
-@new_stroe = Store.create(name:"New store")
+@new_store = Store.create(name: @store_name_by_users)
 puts @new_store.errors.full_messages
